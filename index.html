@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Paddle Basket</title>
     <!-- Bootstrap from CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -16,6 +16,67 @@
 <body>
     <div class="container">
         <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-header">
+                        <h1>Paddle Shopping Cart <small>Flagellum goes off road</small></h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4"><h2>Subscription Option 1</h2>
+                        <div class="col-xs-4">
+                            <h4>Price: 35</h4>
+                            <button type="button" id="subscripton1" class="btn btn-primary">Add To Basket</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-4"><h2>Subscription Option 2</h2>
+                        <div class="col-xs-4">
+                            <h4>Price: 70</h4>
+                            <button type="button" id="subscripton2" class="btn btn-primary">Add To Basket</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-4"><h1>Basket</h1>
+                        <div class="col-xs-4">
+                            <h4>Total:</h4><p id="demo">0</p>
+                            <button type="button" class="btn btn-primary">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-8"><h2>Add ons <small>Bolt these on to your subscription</small></h2>
+                    <div class="col-xs-4"><h2>Addition 1</h2>
+                        <div class="col-xs-4">
+                            <h4>Price: 2</h4>
+                        </div>
+                        <div class="col-xs-4">
+                            <button type="button" id="addition1" class="btn btn-primary">Add To Basket</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-4"><h2>Addition 2</h2>
+                        <div class="col-xs-4">
+                            <h4>Price: 5</h4>
+                        </div>
+                        <div class="col-xs-4">
+                            <button type="button" id="addition2" class="btn btn-primary">Add To Basket</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-4"><h2>Addition 3</h2>
+                        <div class="col-xs-4">
+                            <h4>Price: 10</h4>
+                        </div>
+                        <div class="col-xs-4">
+                            <button type="button" id="addition3" class="btn btn-primary">Add To Basket</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-4"><h2>Addition 4</h2>
+                        <div class="col-xs-4">
+                            <h4>Price: 15</h4>
+                        </div>
+                        <div class="col-xs-4">
+                            <button type="button" id="addition4" class="btn btn-primary">Add To Basket</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
         </div>
     </div>
     <script
@@ -24,5 +85,7 @@
     crossorigin="anonymous"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="interface.js"></script>
 </body>
 </html>
