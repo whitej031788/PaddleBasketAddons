@@ -88,6 +88,7 @@
     <script src="app.js"></script>
     <script>
     // Sample below of what the API endpoint expects
+    /*
     $(function() {
         $.ajax({
             url: "/api.php",
@@ -98,7 +99,8 @@
                 subscription_id: 537832, 
                 quantity: 5, 
                 title: "Title",
-                custom_message: "Custom Message and more things like it"
+                custom_message: "Custom Message and more things like it",
+                passthrough: JSON.stringify({add_ons: [{name: "Year Support", id: 123},{name: "Extra Calendar", id: 456},{name: "Stuff", id: 789}]})
             },
             dataType: "json",
             success: function(data) {
@@ -109,6 +111,7 @@
             }
         });
     });
+    */
     </script>
 </body>
 </html>
