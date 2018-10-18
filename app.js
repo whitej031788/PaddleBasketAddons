@@ -51,6 +51,10 @@ function showBasketAmount() {
     document.getElementById("contents").innerHTML = JSON.stringify(basket.contents);
 }
 
+function showSubscriptionProducts() {
+    document.getElementById("subscription").innerHTML = data;
+}
+
 function showBasketsContent() {
     showBasketAmount();
     showBasketProducts();
