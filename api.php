@@ -32,8 +32,11 @@ if (isset($_POST['custom_message'])) {
 if (isset($_POST['quantity'])) {
     $myReq['quantity'] = $_POST['quantity'];
 }
-
+if (isset($_POST['passthrough'])) {
+    $myReq['passthrough'] = $_POST['passthrough'];
+}
 $myReq['expires'] = date('Y-m-d', strtotime("+1 days"));
+
 try {
     if ($errMsg) {
         throw new Exception($errMsg, 500);
