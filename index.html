@@ -88,9 +88,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="app.js"></script>
     <script>
-    // Sample below of what the API endpoint expects
-    /*
     $(function() {
+        // Sample below of what the API endpoint expects to get a custom URL
         $.ajax({
             url: "/api.php",
             type: "POST",
@@ -105,14 +104,37 @@
             },
             dataType: "json",
             success: function(data) {
-                window.open(data.response.url);
+                console.log(data);
+            },
+            failure: function(errMsg) {
+                console.log(errMsg);
+            }
+        });
+        // Sample to get Subscription Plans
+        $.ajax({
+            url: "/api.php?method=plans",
+            type: "POST",
+            success: function(data) {
+                // Array of plans in data.response
+                console.log(data);
+            },
+            failure: function(errMsg) {
+                console.log(errMsg);
+            }
+        });
+        // Sample to get Products (add ons)
+        $.ajax({
+            url: "/api.php?method=products",
+            type: "POST",
+            success: function(data) {
+                // Array of products in data.response.products
+                console.log(data);
             },
             failure: function(errMsg) {
                 console.log(errMsg);
             }
         });
     });
-    */
     </script>
 </body>
 </html>
