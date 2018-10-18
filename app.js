@@ -1,5 +1,6 @@
 function Basket() {
     this.result = 0;
+    this.contents = [];
   }
 
 $(document).ready(function() {
@@ -7,35 +8,52 @@ $(document).ready(function() {
 
     $('#subscripton1').click(function() {
         basket.result = basket.result + 35;
-        showBasketAmount()
+        basket.contents.push({name: "Subscription1", id: "123456"});
+        console.log(basket)
+        showBasketAmount();
+        showBasketProducts();
     });
 
     $('#subscripton2').click(function() {
         basket.result = basket.result + 70;
-        showBasketAmount()
+        basket.contents.push({name: "Subscription2", id: "123456"});
+        showBasketAmount();
+        showBasketProducts();
     });
 
     $('#addition1').click(function() {
         basket.result = basket.result + 2;
-        showBasketAmount()
+        basket.contents.push({name: "Addition1", id: "123456"});
+        showBasketAmount();
+        showBasketProducts();
     });
 
     $('#addition2').click(function() {
         basket.result = basket.result + 5;
-        showBasketAmount()
+        basket.contents.push({name: "Addition2", id: "123456"});
+        showBasketAmount();
+        showBasketProducts();
     });
 
     $('#addition3').click(function() {
         basket.result = basket.result + 10;
-        showBasketAmount()
+        basket.contents.push({name: "Addition3", id: "123456"});
+        showBasketAmount();
+        showBasketProducts();
     });
 
     $('#addition4').click(function() {
         basket.result = basket.result + 15;
-        showBasketAmount()
+        basket.contents.push({name: "Addition4", id: "123456"});
+        showBasketAmount();
+        showBasketProducts();
     });
 })
 
 function showBasketAmount() {
-    document.getElementById("demo").innerHTML = basket.result;
+    document.getElementById("result").innerHTML = basket.result;
+ }
+
+ function showBasketProducts() {
+        document.getElementById("contents").innerHTML = JSON.stringify(basket.contents);
  }
